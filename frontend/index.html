@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Chetna AGI Console</title>
+  <style>
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:#f6f7fb;margin:0}
+    .wrap{max-width:860px;margin:40px auto;padding:24px}
+    .card{background:#fff;border-radius:14px;box-shadow:0 6px 22px rgba(0,0,0,.06);padding:20px}
+    h1{margin:0 0 6px}
+    .row{display:flex;gap:12px;margin-top:12px}
+    textarea{flex:1;border:1px solid #e3e6ef;border-radius:10px;padding:12px;font-size:16px;min-height:110px}
+    button{background:#7c3aed;color:#fff;border:0;border-radius:10px;padding:12px 18px;font-weight:600;cursor:pointer}
+    button:disabled{opacity:.5;cursor:not-allowed}
+    .chat{margin-top:16px;white-space:pre-wrap}
+    .bubble{padding:10px 12px;border-radius:12px;margin:8px 0;max-width:100%}
+    .me{background:#eef2ff}
+    .ai{background:#f9fafb;border:1px solid #eef0f6}
+    .muted{color:#667085;font-size:13px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>ChetnaGPT v1.0</h1>
+      <div class="muted">Dharmic AGI Console Assistant</div>
+
+      <div class="row">
+        <textarea id="userInput" placeholder="Type your message..."></textarea>
+        <div style="display:flex;flex-direction:column;gap:8px">
+          <button id="sendBtn">Send</button>
+          <button id="clearBtn" style="background:#111827">Clear</button>
+        </div>
+      </div>
+
+      <div id="chatBox" class="chat"></div>
+      <div id="status" class="muted"></div>
+    </div>
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
