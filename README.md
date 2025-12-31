@@ -1,2 +1,2 @@
 # Chetna-AI
-India's first Dharmic AGI
+India's first Ethical AI
